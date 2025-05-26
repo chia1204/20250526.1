@@ -37,7 +37,7 @@ function draw() {
   // 臉部偵測，鼻子處畫圓與顯示圖片
   if (facePredictions.length > 0) {
     const keypoints = facePredictions[0].scaledMesh;
-    const [x, y] = keypoints[1]; // 鼻尖
+    const [x, y] = keypoints[0]; // 鼻尖
 
     // 先畫圓圈
     noFill();
